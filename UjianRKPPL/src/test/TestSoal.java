@@ -12,6 +12,7 @@ public class TestSoal {
 	public void test() {
 		Soal soal = new Soal();
 		assertEquals(6, soal.perkalian(2, 3));
+		assertEquals(8, soal.pangkat(2, 3));
 	}
 
 }
