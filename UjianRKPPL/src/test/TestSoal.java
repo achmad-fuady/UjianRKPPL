@@ -9,10 +9,17 @@ import soal.Soal;
 public class TestSoal {
 
 	@Test
-	public void test() {
+	public void testPerkalian() {
 		Soal soal = new Soal();
 		assertEquals(6, soal.perkalian(2, 3));
-		assertEquals(8, soal.pangkat(2, 3));
+		assertEquals(6, soal.pangkat(3, 2));
+	}
+	
+	@Test
+	public void testPangkat(){
+		Soal soal = new Soal();
+		assertEquals(8,soal.pangkat(2, 3));
+		assertEquals(9, soal.pangkat(3, 2));
 	}
 
 }
